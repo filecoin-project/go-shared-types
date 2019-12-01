@@ -4,6 +4,7 @@ go 1.13
 
 require (
 	github.com/filecoin-project/filecoin-ffi v0.0.0-20191210104338-2383ce072e95
+	github.com/filecoin-project/go-bls-sigs v0.0.0-20191126221701-443b5348d38e // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20190812055157-5d271430af9f // indirect
 	github.com/ipfs/go-cid v0.0.4-0.20191112011718-79e75dffeb10 // indirect
 	github.com/ipfs/go-ipld-cbor v0.0.3
