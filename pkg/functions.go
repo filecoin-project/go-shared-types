@@ -1,4 +1,4 @@
-package pkg
+package types
 
 func ElectionPostChallengeCount(sectors uint64) uint64 {
 	if sectors == 0 {
