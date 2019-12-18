@@ -1,4 +1,4 @@
-package types
+package bigint
 
 import (
 	"bytes"
