@@ -3,6 +3,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/filecoin-project/filecoin-ffi v0.0.0-20191204125133-ebb3e13addf1 h1:VCH2UVdLmpQc5BKLGSW4YzCHB7JMXgPU/6yXGpbkNnU=
 github.com/filecoin-project/filecoin-ffi v0.0.0-20191204125133-ebb3e13addf1/go.mod h1:yA6YM1jzYoKaPrFjJIKV3ZmcGZJlo8rpmxfzBRNlLwM=
+github.com/filecoin-project/filecoin-ffi v0.0.0-20191210104338-2383ce072e95 h1:XvUv9epP6MBCEr8PH4pNrd+QhkQu0Zsun6v1+qpn3Dk=
+github.com/filecoin-project/filecoin-ffi v0.0.0-20191210104338-2383ce072e95/go.mod h1:yA6YM1jzYoKaPrFjJIKV3ZmcGZJlo8rpmxfzBRNlLwM=
 github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
 github.com/gopherjs/gopherjs v0.0.0-20190812055157-5d271430af9f h1:KMlcu9X58lhTA/KrfX8Bi1LQSO4pzoVjTiL3h4Jk+Zk=
 github.com/gopherjs/gopherjs v0.0.0-20190812055157-5d271430af9f/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
