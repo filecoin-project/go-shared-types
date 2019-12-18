@@ -1,4 +1,4 @@
-package bigint
+package types
 
 import (
 	"encoding/json"
@@ -10,13 +10,11 @@ import (
 	"github.com/polydawn/refmt/obj/atlas"
 	cbg "github.com/whyrusleeping/cbor-gen"
 	"golang.org/x/xerrors"
-
-	constants "github.com/filecoin-project/go-shared-types/pkg"
 )
 
 const BigIntMaxSerializedLen = 128 // is this big enough? or too big?
 
-var TotalFilecoinInt = FromFil(constants.TotalFilecoin)
+var TotalFilecoinInt = FromFil(TotalFilecoin)
 
 func init() {
 	cbor.RegisterCborType(atlas.BuildEntry(BigInt{}).Transform().
@@ -42,7 +40,7 @@ func NewInt(i uint64) BigInt {
 }
 
 func FromFil(i uint64) BigInt {
-	return BigMul(NewInt(i), NewInt(constants.FilecoinPrecision))
+	return BigMul(NewInt(i), NewInt(FilecoinPrecision))
 }
 
 func BigFromBytes(b []byte) BigInt {

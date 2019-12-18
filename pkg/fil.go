@@ -1,18 +1,15 @@
-package fil
+package types
 
 import (
 	"fmt"
 	"math/big"
 	"strings"
-
-	constants "github.com/filecoin-project/go-shared-types/pkg"
-	"github.com/filecoin-project/go-shared-types/pkg/bigint"
 )
 
-type FIL bigint.BigInt
+type FIL BigInt
 
 func (f FIL) String() string {
-	r := new(big.Rat).SetFrac(f.Int, big.NewInt(constants.FilecoinPrecision))
+	r := new(big.Rat).SetFrac(f.Int, big.NewInt(FilecoinPrecision))
 	if r.Sign() == 0 {
 		return "0"
 	}
@@ -34,7 +31,7 @@ func ParseFIL(s string) (FIL, error) {
 		return FIL{}, fmt.Errorf("failed to parse %q as a decimal number", s)
 	}
 
-	r = r.Mul(r, big.NewRat(constants.FilecoinPrecision, 1))
+	r = r.Mul(r, big.NewRat(FilecoinPrecision, 1))
 	if !r.IsInt() {
 		return FIL{}, fmt.Errorf("invalid FIL value: %q", s)
 	}
