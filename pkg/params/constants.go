@@ -6,6 +6,8 @@ package params
 // 1 / n
 const SectorChallengeRatioDiv = 25
 
+const MaxFallbackPostChallengeCount = 10
+
 // /////
 // Devnet settings
 
