@@ -5,13 +5,14 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/filecoin-project/lotus/build"
+	constants "github.com/filecoin-project/go-shared-types/pkg"
+	"github.com/filecoin-project/go-shared-types/pkg/bigint"
 )
 
-type FIL BigInt
+type FIL bigint.BigInt
 
 func (f FIL) String() string {
-	r := new(big.Rat).SetFrac(f.Int, big.NewInt(build.FilecoinPrecision))
+	r := new(big.Rat).SetFrac(f.Int, big.NewInt(constants.FilecoinPrecision))
 	if r.Sign() == 0 {
 		return "0"
 	}
@@ -33,7 +34,7 @@ func ParseFIL(s string) (FIL, error) {
 		return FIL{}, fmt.Errorf("failed to parse %q as a decimal number", s)
 	}
 
-	r = r.Mul(r, big.NewRat(build.FilecoinPrecision, 1))
+	r = r.Mul(r, big.NewRat(constants.FilecoinPrecision, 1))
 	if !r.IsInt() {
 		return FIL{}, fmt.Errorf("invalid FIL value: %q", s)
 	}
