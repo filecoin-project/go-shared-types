@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This repo is no longer supported.
+
 # go-shared-types
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
 [![CircleCI](https://circleci.com/gh/filecoin-project/go-shared-types.svg?style=svg)](https://circleci.com/gh/filecoin-project/go-shared-types)
