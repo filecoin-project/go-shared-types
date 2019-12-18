@@ -3,7 +3,7 @@ module github.com/filecoin-project/go-shared-types
 go 1.13
 
 require (
-	github.com/filecoin-project/filecoin-ffi v0.0.0-20191204125133-ebb3e13addf1
+	github.com/filecoin-project/filecoin-ffi v0.0.0-20191210104338-2383ce072e95
 	github.com/gopherjs/gopherjs v0.0.0-20190812055157-5d271430af9f // indirect
 	github.com/ipfs/go-cid v0.0.4-0.20191112011718-79e75dffeb10 // indirect
 	github.com/ipfs/go-ipld-cbor v0.0.3
@@ -22,3 +22,5 @@ require (
 	golang.org/x/sys v0.0.0-20190826190057-c7b8b68b1456 // indirect
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 )
+
+replace github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
