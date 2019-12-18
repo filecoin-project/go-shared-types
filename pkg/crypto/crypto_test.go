@@ -5,6 +5,8 @@ import (
 	"testing"
 	"time"
 
+	. "github.com/filecoin-project/go-shared-types/pkg/crypto"
+
 	"github.com/stretchr/testify/assert"
 )
 
