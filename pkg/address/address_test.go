@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/filecoin-project/go-shared-types/internal/crypto"
+	"github.com/filecoin-project/go-shared-types/pkg/crypto"
 )
 
 func init() {
