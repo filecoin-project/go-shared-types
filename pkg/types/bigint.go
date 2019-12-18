@@ -3,6 +3,7 @@ package types
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/filecoin-project/go-shared-types/pkg/params"
 	"io"
 	"math/big"
 
@@ -14,7 +15,7 @@ import (
 
 const BigIntMaxSerializedLen = 128 // is this big enough? or too big?
 
-var TotalFilecoinInt = FromFil(TotalFilecoin)
+var TotalFilecoinInt = FromFil(params.TotalFilecoin)
 
 func init() {
 	cbor.RegisterCborType(atlas.BuildEntry(BigInt{}).Transform().
@@ -40,7 +41,7 @@ func NewInt(i uint64) BigInt {
 }
 
 func FromFil(i uint64) BigInt {
-	return BigMul(NewInt(i), NewInt(FilecoinPrecision))
+	return BigMul(NewInt(i), NewInt(params.FilecoinPrecision))
 }
 
 func BigFromBytes(b []byte) BigInt {
