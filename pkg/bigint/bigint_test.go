@@ -2,6 +2,7 @@ package bigint
 
 import (
 	"bytes"
+	"github.com/filecoin-project/go-shared-types/pkg/fil"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -41,7 +42,7 @@ func TestFilRoundTrip(t *testing.T) {
 	}
 
 	for _, v := range testValues {
-		fval, err := ParseFIL(v)
+		fval, err := fil.ParseFIL(v)
 		if err != nil {
 			t.Fatal(err)
 		}
